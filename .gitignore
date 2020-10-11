@@ -834,5 +834,7 @@ InitTestScene*.unity
 # End of https://www.toptal.com/developers/gitignore/api/unity,rider,visualstudio,visualstudiocode,jetbrains+all,jetbrains+iml,jetbrains,csharp
 **/Everything
 **/Everything.meta
-**/TextMesh\ Pro
-**/TextMesh\ Pro.meta
+**/TextMesh Pro
+**/TextMesh Pro.meta
+**/ProBuilder Data
+**/ProBuilder Data.meta
