@@ -15810,6 +15810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotlight: {fileID: 759418281}
+  noiseCount: 2
 --- !u!65 &439123458
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20927,6 +20928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotlight: {fileID: 1106988395}
+  noiseCount: 0
 --- !u!43 &526293247
 Mesh:
   m_ObjectHideFlags: 0
@@ -21927,6 +21929,63 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8937234255478143724, guid: daeb6dcb65f3eb74d925f3ec3aa3113a, type: 3}
   m_PrefabInstance: {fileID: 803070092}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &952994323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 952994325}
+  - component: {fileID: 952994324}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &952994324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952994323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fb74d0cf7b5634a8a443176fca49e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - clip: {fileID: 8300000, guid: 5d6698c5eb1bfa644aced934332e727f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 14ffdb27e46c5a74ea5e45bc9bd8f7be, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: 23c576ca6394fcd41ba2a37e642f78a1, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  footstep: []
+--- !u!4 &952994325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952994323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1024229944
 Mesh:
   m_ObjectHideFlags: 0
@@ -23390,6 +23449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotlight: {fileID: 562270250}
+  noiseCount: 1
 --- !u!65 &1567554318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24135,11 +24195,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 3}
       propertyPath: m_ClearFlags
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100000, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 3}
       propertyPath: sensitivity
